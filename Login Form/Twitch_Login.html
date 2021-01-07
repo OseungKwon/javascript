@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="Twitch_Login.css">
+</head>
+<body>
+    <h2>Modal Login Form</h2>
+    <button onclick="document.getElementById('id01').style.display='block'"style="width:auto;">Login</button>
+    <img src="twitchSite_img.jpg" alt="site_img">
+    <div id="id01" class="modal">
+        <form action="/action_page.php" class="modal-content animate" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="twitch_img.jpg" alt="Avatar" class="avatar">
+            </div>
+            
+            <div class="container">
+                <label for="uname">아이디</label>
+                <input type="text" placeholder="Username" name="uname" required>
+                
+                <label for="psw">비밀번호</label>
+                <input type="password" placeholder="Password" name="psw" required>
+                
+                <span class="fail_login"><a href="#">로그인이 안되세요?</a></span>
+                <button type="submit" class="login-btn">Login</button>
+            </div>
+            
+            <div class="link_facebook">
+               <hr>
+
+                <div class="psw"><a href="#">Facebook 연결</a></div>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        var modal=document.getElementById('id01');
+        window.onclick=function(event){
+            if(event.target==modal){
+                modal.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

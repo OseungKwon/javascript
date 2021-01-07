@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div class="top">
+        <h2>Slideshow</h2>
+        <hr style="max-width: 1000px;">
+        <div class="menu">
+            <div class="myMenu">뉴스</div>
+            <div class="myMenu">매거진</div>
+            <div class="myMenu">TV</div>
+            <div class="myMenu">룩북</div>
+            <div class="myMenu">커뮤니티</div>
+        </div>
+        <hr style="max-width: 1000px;">
+    </div>
+    <div class="slideshow-container">
+       
+        <div class="mySlides fade">
+            <div class="numbertext">1/4</div>
+            <img src="img1.jpg" style="width: 100%">
+            <div class="text">sample 1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/4</div>
+            <img src="img2.jpg" style="width: 100%">
+            <div class="text">sample 2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/4</div>
+            <img src="img3.jpg" style="width: 100%">
+            <div class="text">sample 3</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4/4</div>
+            <img src="img4.jpg" style="width: 100%">
+            <div class="text">sample 4</div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++)
+                slides[i].style.display = "none";
+            slideIndex++;
+            if (slideIndex > slides.length)
+                slideIndex = 1;
+            for (i = 0; i < dots.length; i++)
+                dots[i].className = dots[i].className.replace(" active", "");
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</body></html>

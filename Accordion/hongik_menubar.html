@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .menu {
+            color: #002148;
+            font-size: 30px;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        .accordion {
+            background-color: #002148;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 20%;
+            border: none;
+            border-bottom: 1px solid white;
+            font-size: 15px;
+            text-align: left;
+            transition: 0.5s;
+        }
+        .active, .accordion:hover{
+            opacity: 0.9;
+        }
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        .active:after {
+            content: "\2212";
+        }
+        .panel {
+            padding: 0 18px;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.2s ease-out;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">HONGIK Univ.</div>
+    <button class="accordion">대학소개</button>
+    <div class="panel">
+        <ul>
+            <li>학교소개</li>
+            <li>학교현황</li>
+            <li>학교홍보</li>
+        </ul>
+    </div>
+    <button class="accordion">입학안내</button>
+    <div class="panel">
+        <ul>
+            <li>학교소개</li>
+            <li>학교현황</li>
+            <li>학교홍보</li>
+        </ul>
+    </div>
+    <button class="accordion">대학/대학원</button>
+    <div class="panel">
+        <ul>
+            <li>학교소개</li>
+            <li>학교현황</li>
+            <li>학교홍보</li>
+        </ul>
+    </div>
+    <button class="accordion">기관/시설</button>
+    <div class="panel">
+        <ul>
+            <li>학교소개</li>
+            <li>학교현황</li>
+            <li>학교홍보</li>
+        </ul>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight)
+                    panel.style.maxHeight = null;
+                else
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+            });
+        }
+    </script>
+</body></html>

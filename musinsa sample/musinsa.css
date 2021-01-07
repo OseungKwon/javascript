@@ -1,0 +1,10 @@
+* {box-sizing: border-box;}
+.main_wrapper{
+    display: inline-block;
+    width: 200px;
+    
+}
+
+li{
+    display: inline-block;
+}

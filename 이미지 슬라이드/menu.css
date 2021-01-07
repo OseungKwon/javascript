@@ -1,0 +1,14 @@
+* {box-sizing: border-box;}
+.top{
+    text-align: center;
+}
+.menu{
+    width: 1000px;
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 3px;
+    
+}
+.myMenu{
+    justify-content: flex-end;
+}
