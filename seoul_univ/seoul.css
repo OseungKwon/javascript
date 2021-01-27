@@ -1,9 +1,62 @@
+body {
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main_video {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+
+}
+
+video {
+    left: 100%;
+    margin-left: -200%;
+    height: 57rem;
+    text-align: center;
+    position: relative;
+}
+
+.video_text {
+    overflow: hidden;
+    position: absolute;
+    top: 45%;
+    width: 110%;
+}
+
+.top_bar {
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #f37060;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    position: fixed;
+    transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+    top: -51px;
+}
+
 .side_bar {
     height: 100%;
     width: 180px;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 51px;
     left: 0;
     background-color: #193988;
     overflow-x: hidden;
@@ -25,7 +78,6 @@
     cursor: pointer;
     padding: 6px 16px 6px 16px;
     text-align: center;
-    text-decoration: none;
     display: block;
     color: #aecbff;
     font-size: 15px;
@@ -42,7 +94,7 @@
     z-index: 2;
     top: 0;
     left: 180px;
-    background-color: rgba(25,57,136,0.9);
+    background-color: rgba(25, 57, 136, 0.9);
     overflow-x: hidden;
     padding-top: 60px;
 }
@@ -54,21 +106,57 @@
     color: white;
     display: block;
 }
-.content_info{
-    margin-top:100px;
+
+.content_info {
+    margin-top: 100px;
 }
-.content_info:after{
-    clear: both; display: block; content: '';
+
+.content_info:after {
+    clear: both;
+    display: block;
+    content: '';
 }
-.content{
+
+.content {
     float: left;
-    margin-right: 10px; 
+    margin-right: 10px;
     padding-left: 0;
     width: 130px;
 }
-.next{
+
+.next {
     float: left;
     padding: 3px 3px 8px 10px;
     margin-left: 10px;
     color: white;
+}
+
+.main {
+    position: relative;
+}
+
+.main_content {
+    position: relative;
+    margin-left: 180px;
+}
+
+.visitnav {
+    background: rgba(28, 36, 70, 0.8);
+    z-index: 2;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    text-align: center;
+}
+
+.visitnav span {
+    border-bottom: 1px solid rgba(49, 63, 90, 0.55);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 10px 7px;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 55px;
 }

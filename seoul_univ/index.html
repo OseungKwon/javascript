@@ -5,88 +5,152 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="seoul.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <div class="side_bar">
-        <a href=""><img src="seoul_img.jpg" alt=""></a>
-        <div class="nav">
-            <span onmouseover="openNav()">교육</span>
-            <span onmouseover="openNave()">입학</span>
-            <span onmouseover="openNav()">대학생활</span>
-            <span onmouseover="openNav()">SNU NOW</span>
-            <span onmouseover="openNav()">대학소개</span>
+    <div class="top_bar">
+        <a href="">SNU Responds to COVID-19 >></a>
+    </div>
+    <div class="side">
+        <div class="side_bar">
+            <a href=""><img src="seoul_img.jpg" alt=""></a>
+            <div class="nav">
+                <span onmouseover="openNav()">교육</span>
+                <span onmouseover="openNave()">입학</span>
+                <span onmouseover="openNav()">대학생활</span>
+                <span onmouseover="openNav()">SNU NOW</span>
+                <span onmouseover="openNav()">대학소개</span>
+            </div>
+
+        </div>
+        <div id="myside_info" class="side_info" onmouseout="mouseout()">
+            <div class="content_info">
+                <div class="next">></div>
+                <div class="content">
+                    <a href="">대학</a>
+                    <a href="">대학</a>
+                    <a href="">교과과정</a>
+                    <a href="">기초교양교육</a>
+                </div>
+                <div class="next">&#62</div>
+                <div class="content">
+                    <a href="">대학원</a>
+                    <a href="">일반대학원</a>
+                    <a href="">전문대학원</a>
+                    <a href="">교과과정</a>
+                </div>
+                <div class="next">&#62</div>
+                <div class="content">
+                    <a href="">공개강좌</a>
+                </div>
+                <div class="next">&#62</div>
+                <div class="content">
+                    <a href="">학사행정</a>
+                    <a href="">학사일정</a>
+                    <a href="">등록금납부</a>
+                    <a href="">수업</a>
+                    <a href="">학적</a>
+                    <a href="">장학금, 학자금</a>
+                    <a href="">증명서발급</a>
+                    <a href="">교직원행정</a>
+                </div>
+            </div>
+            <hr>
         </div>
 
-    </div>
-    <div id="myside_info" class="side_info">
-        <div class="content_info">
-            <div class="next">></div>
-            <div class="content">
-                <a href="">대학</a>
-                <a href="">대학</a>
-                <a href="">교과과정</a>
-                <a href="">기초교양교육</a>
+        <div id="myside_info_one" class="side_info">
+            <div class="content_info">
+                <div class="next">></div>
+                <div class="content">
+                    <a href="">연구성과</a>
+                </div>
+                <div class="next">&#62</div>
+                <div class="content">
+                    <a href="">연구현황</a>
+                </div>
+                <div class="next">&#62</div>
+                <div class="content">
+                    <a href="">연구기관</a>
+                    <a href="">연구소/연구원</a>
+                    <a href="">국가지원연구센터</a>
+                    <a href="">BK21플러스 사업단(팀)</a>
+                    <a href="">HK사업단</a>
+                </div>
+                <div class="next">&#62</div>
+                <div class="content">
+                    <a href="">연구지원</a>
+                    <a href="">중점연구지원</a>
+                    <a href="">학술연구지원</a>
+                    <a href="">한국학 통일학지원</a>
+                    <a href="">연구기자재지원</a>
+                    <a href="">연구실 안전관리</a>
+                </div>
             </div>
-            <div class="next">&#62</div>
-            <div class="content">
-                <a href="">대학원</a>
-                <a href="">일반대학원</a>
-                <a href="">전문대학원</a>
-                <a href="">교과과정</a>
-            </div>
-            <div class="next">&#62</div>
-            <div class="content">
-                <a href="">공개강좌</a>
-            </div>
-            <div class="next">&#62</div>
-            <div class="content">
-                <a href="">학사행정</a>
-                <a href="">학사일정</a>
-                <a href="">등록금납부</a>
-                <a href="">수업</a>
-                <a href="">학적</a>
-                <a href="">장학금, 학자금</a>
-                <a href="">증명서발급</a>
-                <a href="">교직원행정</a>
-            </div>
+            <hr>
         </div>
-        <hr>
-    </div>
-    
-    <div id="myside_info_one" class="side_info">
-        <div class="content_info">
-            <div class="next">></div>
-            <div class="content">
-                <a href="">연구성과</a>
-            </div>
-            <div class="next">&#62</div>
-            <div class="content">
-                <a href="">연구현황</a>
-            </div>
-            <div class="next">&#62</div>
-            <div class="content">
-                <a href="">연구기관</a>
-                <a href="">연구소/연구원</a>
-                <a href="">국가지원연구센터</a>
-                <a href="">BK21플러스 사업단(팀)</a>
-                <a href="">HK사업단</a>
-            </div>
-            <div class="next">&#62</div>
-            <div class="content">
-                <a href="">연구지원</a>
-                <a href="">중점연구지원</a>
-                <a href="">학술연구지원</a>
-                <a href="">한국학 통일학지원</a>
-                <a href="">연구기자재지원</a>
-                <a href="">연구실 안전관리</a>
-            </div>
-        </div>
-        <hr>
     </div>
     <div class="main">
-        <img src="cpgn.jpg" alt="">
+       <div class="main_video">
+           <video src="movie.mp4" autoplay="autoplay" muted="muted"></video>
+           <div class="video_text"><img src="symbol_lg.png" alt=""></div>
+       </div>
+       
+        <div class="visitnav">
+            <span>방문객</span>
+            <span>예비신입생</span>
+            <span>교수 및 연구진</span>
+            <span>동문</span>
+            <span>재학생</span>
+        </div>
+        <div class="main_content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi laudantium magnam fugit aspernatur a ea iusto, exercitationem quae. Praesentium eius, molestiae alias officia aliquam vel, rerum, inventore ad amet modi, nihil cupiditate. Ipsam odit officiis nesciunt, nisi ullam eligendi sequi minima alias. Consectetur fugiat pariatur soluta voluptatum necessitatibus corporis, mollitia modi, unde repellendus ratione, distinctio qui odit id itaque dolorem perferendis. Adipisci minus voluptatem excepturi rem consequuntur amet iusto culpa, eveniet nobis id expedita aut nesciunt praesentium, minima fugiat eos sed aliquam ut veritatis quaerat, quo dolore error sit aspernatur? Commodi est quam tempora voluptate quis ut, quasi eos temporibus reprehenderit expedita, dolorum, saepe aut suscipit nam alias iste repellat. Commodi blanditiis voluptate earum eveniet architecto, assumenda facilis magnam delectus aspernatur magni fuga, laborum ea sapiente rem eum minima, ipsum inventore excepturi, illo non placeat rerum aperiam autem. Error quasi, sequi, dolorem non voluptatibus corrupti! Voluptatibus corporis mollitia nesciunt vero natus laboriosam voluptatum deleniti iste distinctio, expedita nihil nobis unde consequatur repellendus. Deserunt iusto assumenda sint ratione, vero officia, atque itaque, voluptates doloribus aut possimus amet. Et consequatur quis assumenda dolorum, quas, perferendis quam explicabo nostrum eos ea facilis quisquam nemo temporibus non. Accusantium ipsum voluptates eos fugiat explicabo consequuntur quidem autem, natus aperiam quo quibusdam veritatis unde necessitatibus tempore laboriosam rem consequatur doloribus laudantium atque, tempora reprehenderit maxime nihil! Similique ab ea tempora quam sunt quae, autem assumenda mollitia consequatur quas provident pariatur iusto, velit reiciendis aut aliquid sint voluptatem, harum, commodi necessitatibus rem ipsa. Placeat vel quam, et, nobis eius autem molestiae repellat cum? Totam, maiores, modi. Et voluptatem architecto pariatur accusamus quo tempora in aut soluta numquam, quod rem enim explicabo, sint commodi error quasi! Tenetur, aspernatur vero. Vero dignissimos labore dolore nesciunt eum, pariatur atque libero obcaecati facere, maiores impedit cupiditate accusamus ratione, fugiat possimus architecto soluta. Tempora consectetur ullam numquam alias aspernatur placeat excepturi sed consequatur officia, esse saepe necessitatibus rerum distinctio! Mollitia, sapiente accusamus eveniet magnam quibusdam cumque recusandae voluptate nihil, cum suscipit quia voluptatum nemo libero quis fugiat placeat nobis assumenda. Fugiat hic numquam maiores placeat doloribus quasi praesentium repudiandae, quod, quia quis porro! Commodi laudantium quia voluptatum! Voluptatem esse impedit, vel numquam. Saepe est necessitatibus reprehenderit ab fuga ut error perferendis eos ex, in vitae porro ducimus ullam voluptatibus dicta maxime quisquam dolore non fugit voluptas nihil ratione recusandae dolores, architecto. Quas illo quibusdam, reiciendis obcaecati aspernatur minima enim consequuntur odit aliquid repellat aperiam deleniti reprehenderit dolores ducimus officia facilis delectus tempora quam nam molestias voluptatem repellendus mollitia ad voluptas. Magni aspernatur culpa dolore doloribus aut, laborum ut accusantium earum necessitatibus qui. Suscipit nemo saepe ea modi dolor ex, praesentium neque, commodi provident sequi laudantium officiis et sit pariatur voluptatibus ducimus architecto eum nam debitis totam id porro. Vel sapiente earum molestiae, impedit quo nulla necessitatibus neque iure. Praesentium, dolores esse id dolor, magnam expedita alias accusamus corrupti ab sed voluptates ratione sequi aliquam fugiat incidunt harum obcaecati laborum autem ipsam, in, sapiente est temporibus magni. Pariatur fugiat hic omnis, voluptates eveniet.
+        </div>
     </div>
+
+    <script>
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.top_bar').outerHeight();
+
+        $(window).scroll(function(event) {
+            didScroll = true;
+        });
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            if (st > lastScrollTop && st > navbarHeight) {
+                $('.top_bar').removeClass('nav-down').addClass('nav-up');
+                $('.side_bar').css({
+                    "top": "0px",
+                    "position": "fixed",
+                    "transition": "top 0.2s ease-in-out"
+                });
+            } else {
+                if (st + $(window).height() < $(document).height()) {
+                    $('.top_bar').removeClass('nav-up').addClass('nav-down');
+                    $('.side_bar').css({
+                        "top": "51px",
+                        "position": "fixed",
+                        "transition": "top 0.2s ease-in-out"
+                    });
+                }
+            }
+            lastScrollTop = st;
+        }
+    </script>
     <script>
         function openNav() {
             document.getElementById("myside_info").style.width = "800px";
@@ -98,5 +162,15 @@
             document.getElementById("myside_info_one").style.width = "800px";
             document.getElementById("myside_info").style.width = "0";
         }
+
+
+        $(document).ready(function() {
+            $(".side").mouseleave(function() {
+                $('.side_info').css({
+                    "width": "0px"
+                })
+            })
+        })
+
     </script>
 </body></html>
