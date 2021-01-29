@@ -376,6 +376,8 @@ video {
     overflow: hidden;
 }
 #banner-main{
+    border: 4px solid white;
+    padding: 5px 20px;
     display: inline-block;
     position: relative;
     right: 10%;
