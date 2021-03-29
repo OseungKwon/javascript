@@ -17,6 +17,24 @@
       "css": "menu",
       "code": 61641,
       "src": "fontawesome"
+    },
+    {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "home",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "dc73bee1d58539abe8c96b958bf4c931",
+      "css": "fire",
+      "code": 59394,
+      "src": "elusive"
+    },
+    {
+      "uid": "8782cc70184b33096ae927590d1fadc4",
+      "css": "doc-landscape",
+      "code": 59395,
+      "src": "entypo"
     }
   ]
 }
